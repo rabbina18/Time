@@ -22,8 +22,14 @@ setInterval(()=>{
             for(let menu of menus) menu.classList.remove('on');
             menus[index].classList.add('on');
         }
-    })
-    
+    });
+
+    if(main.classList.contains('afternoon'))
+        main.classList.add('dark_text');
+    else{
+        main.classList.remove('dark_text');
+    }
+
     /*
     if(hr>=5 && hr<11){
         main.className='';
